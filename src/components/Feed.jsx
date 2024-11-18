@@ -14,7 +14,8 @@ const Feed = () => {
     if (feed) return;
     try {
       const res = await axios.get(Base_URL + "feed", { withCredentials: true });
-      dispatch(addFeed(res.data));
+      console.log("res");
+      dispatch(addFeed(res.data.users));
     } catch (err) {
       //
     }
@@ -22,10 +23,15 @@ const Feed = () => {
   useEffect(() => {
     getFeed();
   }, []);
+
+  if (!feed) return;
+
+  if (feed.length <= 0)
+    return <h1 className="flex justify-center text-lg">No New Users Found</h1>;
   return (
     feed && (
       <div className="flex justify-center my-10">
-        <UserCard user={feed.users[0]} />
+        <UserCard user={feed[0]} />
       </div>
     )
   );
