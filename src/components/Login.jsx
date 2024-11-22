@@ -95,7 +95,7 @@ const Login = () => {
               <span className="label-text">Password</span>
             </div>
             <input
-              type="text"
+              type="password"
               placeholder=""
               value={passWord}
               className="input input-bordered w-full max-w-xs mb-2"
@@ -110,7 +110,7 @@ const Login = () => {
               className="btn btn-primary"
               onClick={isLogin ? handleLogin : handleSignUp}
             >
-              Login
+              {isLogin ? "Login" : "SignUp"}
             </button>
           </div>
           <p
