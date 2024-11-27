@@ -52,7 +52,7 @@ const Login = () => {
   return (
     <div>
       <div className="card bg-base-100 image-full w-96 shadow-xl m-auto my-7">
-        <div className="card-body">
+        <div className="card-body h-{400}">
           <h2 className="card-title justify-center">
             {isLogin ? "login" : "SignUp"}
           </h2>

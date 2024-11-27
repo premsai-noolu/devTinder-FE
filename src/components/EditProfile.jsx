@@ -49,7 +49,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     placeholder=""
                     value={firstName}
-                    className="input input-bordered w-full max-w-xs mb-1"
+                    className="input input-bordered w-full max-w-xs mb-0.5"
                     onChange={(e) => setFirstName(e.target.value)}
                   />
                   <div className="label">
@@ -59,7 +59,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     placeholder=""
                     value={lastName}
-                    className="input input-bordered w-full max-w-xs mb-1"
+                    className="input input-bordered w-full max-w-xs mb-0.5"
                     onChange={(e) => setLastName(e.target.value)}
                   />
                   <div className="label">
@@ -69,7 +69,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     placeholder=""
                     value={age}
-                    className="input input-bordered w-full max-w-xs mb-1"
+                    className="input input-bordered w-full max-w-xs mb-0.5"
                     onChange={(e) => setAge(e.target.value)}
                   />
                   <div className="label">
@@ -79,7 +79,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     placeholder=""
                     value={gender}
-                    className="input input-bordered w-full max-w-xs mb-1"
+                    className="input input-bordered w-full max-w-xs mb-0.5"
                     onChange={(e) => setGender(e.target.value)}
                   />
                   <div className="label">
@@ -89,7 +89,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     placeholder=""
                     value={photoUrl}
-                    className="input input-bordered w-full max-w-xs mb-1"
+                    className="input input-bordered w-full max-w-xs mb-0.5"
                     onChange={(e) => setPhotoUrl(e.target.value)}
                   />
                   <div className="label">
@@ -99,7 +99,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     placeholder=""
                     value={about}
-                    className="input input-bordered w-full max-w-xs mb-1"
+                    className="input input-bordered w-full max-w-xs mb-0.5"
                     onChange={(e) => setAbout(e.target.value)}
                   />
                 </label>
@@ -107,7 +107,7 @@ const EditProfile = ({ user }) => {
               <div>
                 <p className="text-red-500">{error1}</p>
               </div>
-              <div className="card-actions justify-center my-3">
+              <div className="card-actions justify-center my-1">
                 <button className="btn btn-primary" onClick={saveProfile}>
                   Save Profile
                 </button>
