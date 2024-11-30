@@ -22,11 +22,11 @@ const UserCard = ({ user }) => {
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
       <figure>
-        <img src={photoUrl} alt="Shoes" className="w-64 h-64" />
+        <img src={photoUrl} alt="Shoes" className="w-64 h-64 rounded-lg" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{firstName + " " + lastName}</h2>
-        {age && gender && <p>{age + "," + gender}</p>}
+        {age && gender && <p>{age + "  " + gender}</p>}
         <p>{about}</p>
         <div className="card-actions justify-center my-4">
           <button
