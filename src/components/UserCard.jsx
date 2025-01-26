@@ -17,7 +17,9 @@ const UserCard = ({ user }) => {
         { withCredentials: true }
       );
       dispatch(removeUserFeed(_id));
-    } catch (err) {}
+    } catch (err) {
+      console.log("new error");
+    }
   };
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
