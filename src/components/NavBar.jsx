@@ -13,7 +13,7 @@ const NavBar = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post(Base_URL + "logout", {}, { withCredentials: true });
+      await axios.post(Base_URL + "/logout", {}, { withCredentials: true });
       dispatch(removeUser());
       return navigate("/");
     } catch (err) {
